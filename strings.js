@@ -24,6 +24,18 @@ function upperCase(str) {
         } else {
 
             out += str[n]
+var sentence = 'When i went to the mall i bought a pair of shoes.';
+var out = ''
+
+function upperCase(str) {
+    for (var j = 0; j < str.length; j++) {
+        var character = str.length[j]
+        var nextChar = character[j + 1]
+        var prevChar = character[j - 1]
+        if (character == 'i' && prevChar == ' ' && nextChar == ' ') {
+           
+            character[j] += 'I'
+            
         }
     }
     return out
